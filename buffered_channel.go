@@ -10,7 +10,9 @@ func main() {
 	countyName <- "India"
 	countyName <- "USA"
 	countyName <- "UK"
+	countyName <- "Russia"
 	//Receive country names from buffered channel.
+	fmt.Println(<-countyName)
 	fmt.Println(<-countyName)
 	fmt.Println(<-countyName)
 	fmt.Println(<-countyName)
